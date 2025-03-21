@@ -5,7 +5,7 @@
   become: true
   become_method: ansible.builtin.sudo
   gather_facts: false
-  
+
   vars:
     sites:
       - "etis.com"
