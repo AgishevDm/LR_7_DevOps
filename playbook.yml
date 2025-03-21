@@ -1,5 +1,5 @@
 ---
-- name:  Install nginx with Virtual Hosts
+- name: Install nginx with Virtual Hosts
   hosts: webservers
   remote_user: runner
   become: true
@@ -8,9 +8,9 @@
   
   vars:
     sites:
-    - "etis.com"
-    - "fizfak.com"
-    - "mehmat.ru"
+      - "etis.com"
+      - "fizfak.com"
+      - "mehmat.ru"
 
   roles:
-  - nginx-vhosts
+    - nginx_vhosts
