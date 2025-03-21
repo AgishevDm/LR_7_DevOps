@@ -3,7 +3,7 @@
   apt:
     update_cache: True
     name: nginx
-    state: latest
+    state: present
 
 - name: Copy nginx config from template
   template:
