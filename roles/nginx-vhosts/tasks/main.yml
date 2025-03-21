@@ -1,7 +1,7 @@
 ---
 - name: Install nginx
   ansible.builtin.apt:
-    update_cache: True
+    update_cache: true
     name: nginx
     state: present
 
